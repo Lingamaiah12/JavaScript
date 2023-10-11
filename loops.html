@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        value1 = prompt("Enter a number: ");
+        if(value1%2== 0){
+            alert(`${value1} is  Even number`);
+        }
+        else{
+            alert(`${value1} is Odd number`);
+        }
+
+
+        leapyear = prompt("Enter a year");
+
+        if(leapyear%4==0){
+            alert(`${leapyear} is  Leap Year`);
+        }
+        else{
+            alert(`${leapyear} is not Leap Year`);
+
+        }
+
+        a = prompt("Enter a value");
+        b = prompt("Enter b value");
+        c = prompt("Enter c value");
+
+        if(a>b && a>c){
+            alert(`${a} is largest number`);
+        }
+        else if(b>a && b>c){
+            alert(`${b} is largest number`);
+        }else{
+            alert(`${c} is largest number`);
+        }
+
+        time = +prompt('enter a time');
+
+        if(time >= 6 && time <= 11){
+            alert("Good Morning");
+        }
+        else if(time >= 12 && time <= 17){
+            alert("Good Afternoon");
+        }
+        else{
+            alert('Good Night');
+        }
+
+        indianRupee=prompt("Enter a ammount in indian Rupees");
+        dollar = prompt("Enter a dollor");
+
+        var usa = indianRupee * dollar;
+
+        alert(`${usa} in rupees`);
+
+
+        light = "yellow";
+
+        switch(light){
+            case "green":
+                alert("Go");
+                break;
+            case "yellow":
+                alert("Slow down");
+                break;
+            case "red":
+                alert("STOP");
+                break;
+            default:
+                alert("invalid");
+        }
+
+        choice = "1";
+
+        switch(choice){
+            case "1":
+                alert("PIZZA");
+                break;
+            case "2":
+                alert("Chicken biryani");
+                break;
+            case "3":
+                alert("Mutton Biryani");
+                break;
+            case "4":
+                alert("Veg Biryani");
+                break;
+            default:
+                alert("invalid choice");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

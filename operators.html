@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter a name");
+        var value1= +prompt('Enter first value');
+        var value2 = +prompt('Enter second value');
+
+        operand = prompt("Enter a arthemetic operand");
+        if(operand=="+"){
+            var addition = value1 + value2;
+            var result = alert('Addition of two numbers:  ' + addition);
+        }
+        else if(operand=="-"){
+
+            var substract = value1 - value2;
+            var result = alert('Substract of two numbers:  ' + substract);
+        }
+        else if(operand=="*"){
+            var multiply = value1 * value2;
+            var result = alert('Multiply of two numbers:  ' + multiply);
+        }else{
+            var division = value1 / value2;
+            var result = alert('Division of two numbers:  ' + division);
+
+        }
+
+        var age = +prompt('Enter age');
+
+        age >= 18?alert("you are eligible for vote"):alert("you are not eligible for vote");
+
+        var celsius = +prompt("Enter a temparature in celsius");
+        var fahrenheit = (celsius * 9/5);
+        alert(fahrenheit);
+
+        var number = +prompt("Enter a Number");
+
+        number%2==0?alert(`${number} is a even number`):alert(`${number} is a odd number`);
+
+        var password="12345"
+
+        var res = prompt("Enter a password");
+        password===res?alert(`Hello ${name} welcome to my page`):alert('enter correct password');
+    </script>
+</body>
+</html>
